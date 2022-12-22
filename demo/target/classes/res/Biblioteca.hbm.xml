@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+    <class name="com.example.apac3.Biblioteca" table="Biblioteca">
+        <id column="nom" name="nom" type="string">
+            <generator class="assigned"/>
+        </id>
+        <property name="direccio" type="string" />
+        <property name="es_socio" type="int"/>
+        <property column="esta" name="esta" type="int"/>
+    </class>
+</hibernate-mapping>
